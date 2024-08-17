@@ -1,0 +1,13 @@
+tipo:Extra:20000:10000.0
+tipo:Corriente:14900:150000.0
+tipo:Diesel:10000:20000.0
+tipo:low cost:8000:500000.0
+surtidor:Daniela:Extra:0.0:Corriente:0.0:Diesel:0.0:low cost:0.0
+surtidor:Tomas:Extra:0.0:Corriente:0.0:Diesel:0.0:low cost:0.0
+surtidor:Tomas:Extra:0.0:Corriente:0.0:Diesel:0.0:low cost:0.0
+surtidor:Sofia:Extra:0.0:Corriente:0.0:Diesel:0.0:low cost:0.0
+empleado:Mateo:0
+empleado:Alejandro:0
+empleado:Sofia:0
+empleado:Tomas:0
+empleado:Daniela:0
