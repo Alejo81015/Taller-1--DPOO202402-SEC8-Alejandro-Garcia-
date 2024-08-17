@@ -285,13 +285,13 @@ public class GasolineraTest
 
         double galonesVendidos = g2.getSurtidor( 1 ).getGalonesVendidos( CORRIENTE );
         double galonesEsperados = precioPagado / ( double )VALOR_CORRIENTE;
-        System.out.println(Math.abs(galonesVendidos));
+        System.out.println(galonesVendidos);
         System.out.println(galonesEsperados);
-        assertEquals( galonesEsperados, Math.abs(galonesVendidos), 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
+        assertEquals( galonesEsperados, galonesVendidos, 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
 
         double galonesDisponibles = g2.getTipoGasolina( CORRIENTE ).getCantidadDisponible( );
         
-        assertEquals(CANTIDAD_CORRIENTE - galonesDisponibles, Math.abs(galonesVendidos), 0.01, "El inventario del tipo de gasolina no se actualizó correctamente" );
+        assertEquals(CANTIDAD_CORRIENTE - galonesDisponibles, galonesVendidos, 0.01, "El inventario del tipo de gasolina no se actualizó correctamente" );
     }
 
     @Test
@@ -308,10 +308,10 @@ public class GasolineraTest
 
         double galonesVendidos = g2.getSurtidor( 1 ).getGalonesVendidos( CORRIENTE );
         double galonesEsperados = precioPagado / ( double )VALOR_CORRIENTE;
-        assertEquals( galonesEsperados, Math.abs(galonesVendidos), 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
+        assertEquals( galonesEsperados, galonesVendidos, 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
 
         double galonesDisponibles = g2.getTipoGasolina( CORRIENTE ).getCantidadDisponible( );
-        assertEquals( CANTIDAD_CORRIENTE - galonesDisponibles, Math.abs(galonesVendidos), 0.01, "El inventario del tipo de gasolina no se actualizó correctamente" );
+        assertEquals( CANTIDAD_CORRIENTE - galonesDisponibles, galonesVendidos, 0.01, "El inventario del tipo de gasolina no se actualizó correctamente" );
     }
 
     @Test
@@ -329,7 +329,7 @@ public class GasolineraTest
 
         double galonesVendidos = g2.getSurtidor( 1 ).getGalonesVendidos( CORRIENTE );
         double galonesEsperados = precioPagado / ( double )VALOR_CORRIENTE;
-        assertEquals( galonesEsperados, Math.abs(galonesVendidos), 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
+        assertEquals( galonesEsperados, galonesVendidos, 0.01, "La cantidad de galones vendidos en el surtidor no es correcta" );
 
         double galonesDisponibles = g2.getTipoGasolina( CORRIENTE ).getCantidadDisponible( );
         assertEquals( 0, galonesDisponibles, 0.01, "El inventario del tipo de gasolina no se actualizó correctamente" );

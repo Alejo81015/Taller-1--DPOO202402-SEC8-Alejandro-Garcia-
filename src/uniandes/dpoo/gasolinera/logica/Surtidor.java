@@ -54,7 +54,7 @@ public class Surtidor
      */
     public double getGalonesVendidos( String nombreTipoGasolina )
     {
-        return galonesVendidos.get( nombreTipoGasolina );
+        return Math.abs(galonesVendidos.get( nombreTipoGasolina ));
     }
 
     /**
